@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Typing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Welcome View -->
+      <div class="welcome-view">
+        <h1 class="site-title">TypingSpeed.io</h1>
+        <p class="quote">"Sharpen your fingers, race your mind!"</p>
+        <button id="start-test-btn">Start Test</button>
+      </div>
+
+      <!-- Typing Test View -->
+      <div class="typing-test-view hidden">
+        <input type="text" class="input-field" />
+        <div class="content-box">
+          <div class="typing-text">
+            <p id="paragraph"></p>
+          </div>
+          <div class="content">
+            <ul class="result-details">
+              <li>
+                <p>Time Left:</p>
+                <span
+                  ><b><span class="time-left">60</span>s</b></span
+                >
+              </li>
+              <li>
+                <p>Mistakes:</p>
+                <span><b class="mistake">0</b></span>
+              </li>
+              <li>
+                <p>WPM:</p>
+                <span><b class="wpm">0</b></span>
+              </li>
+              <li>
+                <p>CPM:</p>
+                <span><b class="cpm">0</b></span>
+              </li>
+            </ul>
+            <button id="try-again-btn">Try Again</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result View -->
+      <div class="result-view hidden">
+        <h2>Result Analysis</h2>
+        <p>
+          Your Accuracy is <b><span class="accuracy"></span>%</b>
+        </p>
+        <div class="progress-container">
+          <div class="progress-bar" style="width: 0%"></div>
+        </div>
+        <div class="leaderboard">
+          <h3>Score-Board</h3>
+          <p>Your Highest Score: <span class="highest-wpm">0 WPM</span></p>
+          <p>Your Current Score: <span class="current-wpm">0 WPM</span></p>
+          <p class="personal-message"></p>
+        </div>
+
+        <button id="restart-btn">Try Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
